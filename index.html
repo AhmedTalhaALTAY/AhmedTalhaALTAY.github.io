@@ -2,47 +2,123 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTERPC | Teknoloji Elinizin Altında</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding-top: 20px;
-            background-color: #ffffff;
-            padding-bottom: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        header img {
-            width: 320px;
-            height: auto;
-        }
-        header p {
-            margin-top: 10px;
-            font-size: 16px;
-            font-style: italic;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>INTERPC | Teknoloji Elinizin Altında</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f8f8f8; color: #333;
+    }
+    header {
+      text-align: center; padding: 20px; background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header img { width: 320px; height: auto; }
+    header p { margin-top: 10px; font-size: 16px; font-style: italic; }
+
+    .section { padding: 30px 20px; text-align: center; }
+    .section h2 { color: #d72b2b; margin-bottom: 20px; }
+
+    .services, .faq-list {
+      display: flex; flex-wrap: wrap;
+      justify-content: center; gap: 20px;
+    }
+    .box {
+      background: #fff; border: 1px solid #ddd; border-radius: 8px;
+      padding: 20px; width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+    .box h3 { margin-top: 0; color: #d72b2b; }
+
+    .contact, footer {
+      text-align: center; padding: 20px; background: #fff;
+      margin: 20px; border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .whatsapp-button {
+      background: #25D366; color: white;
+      padding: 12px 20px; font-size: 16px;
+      border: none; border-radius: 5px;
+      text-decoration: none; display: inline-block;
+      margin-top: 10px;
+    }
+    iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; margin-top: 20px; }
+    a { color: #d72b2b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="InterPC Logo 2010-cdr.png" alt="InterPC Logo">
-        <p>“Teknoloji Elinizin Altında”</p>
-    </header>
-    <main>
-        <h1>INTERPC'ye Hoş Geldiniz</h1>
-        <p>İzmir Buca'da bilgisayar teknik servis ve satış hizmeti veriyoruz.</p>
-    </main>
+  <header>
+    <img src="InterPC Logo 2010-cdr.png" alt="InterPC Logo"/>
+    <p>“Teknoloji Elinizin Altında”</p>
+  </header>
+
+  <section class="section">
+    <h2>Hakkımızda</h2>
+    <p>1992’den Beri Sektörde Olmanın Vermiş Olduğu Tecrübe ile 33 Yıldır Kaliteli ve Müşteri Odaklı Hizmetinizdeyiz. “Teknoloji Elinizin Altında.”</p>
+  </section>
+
+  <section class="section">
+    <h2>Hizmetlerimiz</h2>
+    <div class="services">
+      <div class="box">
+        <h3>Cep Telefonu & Bilgisayar Teknik Servis</h3>
+        <p>Donanım, yazılım, arıza tespiti, tamir ve bakım hizmetleri.</p>
+      </div>
+      <div class="box">
+        <h3>GSM Yazılım Atölyesi</h3>
+        <p>IMEI onarımı, FRP kaldırma, yazılım yükleme, format işlemleri.</p>
+      </div>
+      <div class="box">
+        <h3>Bilgisayar Satışı</h3>
+        <p>Yeni ve ikinci el bilgisayarlar, özel sistem toplama hizmeti.</p>
+      </div>
+      <div class="box">
+        <h3>Güvenlik Kamerası</h3>
+        <p>Kamera kurulumu, teknik destek ve periyodik bakım hizmetleri.</p>
+      </div>
+      <div class="box">
+        <h3>Diğer Teknik Hizmetler</h3>
+        <p>Ağ kurulumu, modem ayarları, veri kurtarma ve teknik danışmanlık.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <h2>İletişim</h2>
+    <p>📍 İzmir / Buca / Adatepe</p>
+    <p>🏠 Home Office olarak hizmet vermekteyiz.</p>
+    <p>📞 <a href="tel:+905337198644">0533 719 86 44</a></p>
+    <p>📍 <a href="https://g.co/kgs/nAXAjkJ" target="_blank">Google Haritalar'da Görüntüle</a></p>
+    <a class="whatsapp-button" href="https://wa.me/905337198644" target="_blank">📱 WhatsApp'tan Yaz</a>
+    <p>📷 <a href="https://instagram.com/interpc.com.tr" target="_blank">@interpc.com.tr</a></p>
+    <iframe src="https://www.google.com/maps?q=İzmir+Buca+Adatepe&output=embed" allowfullscreen></iframe>
+  </section>
+
+  <section class="section">
+    <h2>Sıkça Sorulan Sorular</h2>
+    <div class="faq-list">
+      <div class="box">
+        <h3>📦 Garanti veriyor musunuz?</h3>
+        <p>Evet, yaptığımız her işçilik ve ürün satışında garanti sunuyoruz.</p>
+      </div>
+      <div class="box">
+        <h3>⏱️ Ne kadar sürede teslim alabilirim?</h3>
+        <p>İşin niteliğine göre aynı gün veya 1-2 gün içinde tamamlıyoruz.</p>
+      </div>
+      <div class="box">
+        <h3>📍 Ofisiniz nerede?</h3>
+        <p>Buca/Adatepe’de home office olarak hizmet veriyoruz. Lütfen randevu alınız.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>“Teknoloji Elinizin Altında”</p>
+    <p>© 2025 INTERPC | Tüm Hakları Saklıdır.</p>
+  </footer>
 </body>
 </html>
